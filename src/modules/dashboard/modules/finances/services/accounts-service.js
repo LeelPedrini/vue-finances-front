@@ -24,7 +24,7 @@ const createAccount = async variables => {
         const data = proxy.readQuery({
           query: AccountsQuery
         })
-        data.accounts = [...data.account, createAccount]
+        data.accounts = [...data.accounts, createAccount]
 
         proxy.writeQuery({
           query: AccountsQuery,
@@ -35,7 +35,7 @@ const createAccount = async variables => {
       }
     }
   })
-  return response.date.createAccount
+  return response.data.createAccount
 }
 
 export default {

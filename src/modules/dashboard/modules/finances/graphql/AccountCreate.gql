@@ -1,8 +1,8 @@
-mutation AccountCreate ($description: String!){
+mutation AccountCreate ($description: String!) {
   createAccount(description: $description){
     id
     description
-    user{
+    user {
       id
       name
       email
