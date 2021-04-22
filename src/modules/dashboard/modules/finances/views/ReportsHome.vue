@@ -112,10 +112,10 @@ export default {
         keyToGroup: 'type',
         keyOfValue: 'amount',
         aliases: { CREDIT: 'Receitas', DEBIT: 'Despesas' },
-        backgroundColors: [
-          '#F44336',
-          '#4CAF50'
-        ]
+        backgroundColors: {
+          CREDIT:'#4CAF50',
+          DEBIT: '#F44336'
+        }
       }))
 
       this.updateOrCreateChart('chartCategoryExpenses', generateChartConfigs({
