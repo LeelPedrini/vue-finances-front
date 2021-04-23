@@ -14,7 +14,7 @@ FROM dev-stage AS build-stage
 RUN npm run build
 
 
-FROM  nginx:alpine AS prod-stage
+FROM nginx:alpine AS prod-stage
 
 COPY --from=build-stage /usr/app/dist /usr/share/nginx/html
 
